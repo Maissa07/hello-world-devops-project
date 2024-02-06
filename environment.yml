@@ -1,4 +1,4 @@
-name: enironent.yml
+name: environment_name
 channels:
   - defaults
 dependencies:

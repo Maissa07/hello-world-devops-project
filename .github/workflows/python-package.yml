@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-
+    name: Build 
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -47,7 +47,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
   sonarqube-scan:
-    name: Build
+    name: SonarQube Scan
     needs: build
     runs-on: ubuntu-latest
     permissions: read-all
